@@ -32,7 +32,9 @@ void PrintMassive(int[] array)
     }
 }
 
-int[] input = new int[5];
+Console.Write("Введите количество чисел для проверки: ");
+int n = int.Parse(Console.ReadLine()!);
+int[] input = new int[n];
 Massive(input);
 PrintMassive(input);
 int result = NumbersGreaterThanZero(input);
